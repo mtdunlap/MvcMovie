@@ -28,6 +28,66 @@ Visual Studio Code will launch a browser and navigate to https://localhost:5001.
 
 By launching the app in non-debug mode changes can be made to the code and the changes can be viewed by simply refreshing the browser.
 
+## Add a Controller
+
+- Right click the Controllers folder and select New File
+- Name the new file `HelloWorldController.cs`
+- Replace the contents of the new file with:
+    ```csharp
+    using Microsoft.AspNetCore.Mvc;
+    using System.Text.Encodings.Web;
+
+    namespace MvcMovie.Controllers
+    {
+        public class HelloWorldController : Controller
+        {
+            // 
+            // GET: /HelloWorld/
+
+            public string Index()
+            {
+                return "This is my default action...";
+            }
+
+            // 
+            // GET: /HelloWorld/Welcome/ 
+
+            public string Welcome()
+            {
+                return "This is the Welcome action method...";
+            }
+        }
+    }
+    ```
+- Run the app in non-debug mode and append "/HelloWorld" to the address bar path.
+- Append "/Welcome" to the address bar path.
+
+### Add Parameters to the Controller
+
+- Modify the welcome method to pass some parameter information from the URL to the controller:
+    ```csharp
+    // GET: /HelloWorld/Welcome/ 
+    // Requires using System.Text.Encodings.Web;
+    public string Welcome(string name, int numTimes = 1)
+    {
+        return HtmlEncoder.Default.Encode($"Hello {name}, NumTimes is: {numTimes}");
+    }
+    ```
+- Run the app in non-debug mode.
+- Append "?name=Rick&numtimes=4" to the address bar path.
+
+### Add Optional Parameters to the Controller
+
+- Modify the Welcome method to the following code:
+    ```csharp
+    public string Welcome(string name, int ID = 1)
+    {
+        return HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
+    }
+    ```
+- Run the app in non-debug mode.
+- Change the route parameter to "/3?name=Rick"
+
 
 [asp_net]: <https://dotnet.microsoft.com/apps/aspnet> "ASP.NET"
 [dotnet_core_sdk]: <https://dotnet.microsoft.com/download>
