@@ -18,6 +18,16 @@ This repository follows the steps in the ["Get started with ASP.NET Core MVC"][g
     > **Required assets to build and debug are missing from 'MvcMovie'. Add them?**
 - Select **Yes**.
 
+## Run the App
+
+- Press `CTRL+F5` to run without the debugger.
+- Run `dotnet dev-certs https --trust` to trust the https development certificate. (Does not work on Linux.)
+- Select **Yes** in the dialog box that pops up.
+
+Visual Studio Code will launch a browser and navigate to https://localhost:5001.
+
+By launching the app in non-debug mode changes can be made to the code and the changes can be viewed by simply refreshing the browser.
+
 
 [asp_net]: <https://dotnet.microsoft.com/apps/aspnet> "ASP.NET"
 [dotnet_core_sdk]: <https://dotnet.microsoft.com/download>
