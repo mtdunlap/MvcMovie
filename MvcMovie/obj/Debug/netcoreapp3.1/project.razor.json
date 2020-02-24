@@ -20506,6 +20506,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "p:\\MicrosoftMvcExample\\MvcMovie\\Views\\HelloWorld\\Index.cshtml",
+      "TargetPath": "Views\\HelloWorld\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "p:\\MicrosoftMvcExample\\MvcMovie\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
