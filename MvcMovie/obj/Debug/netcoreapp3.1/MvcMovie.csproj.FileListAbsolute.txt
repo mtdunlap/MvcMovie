@@ -34,3 +34,4 @@ p:\MicrosoftMvcExample\MvcMovie\obj\Debug\netcoreapp3.1\MvcMovie.dll
 p:\MicrosoftMvcExample\MvcMovie\obj\Debug\netcoreapp3.1\MvcMovie.pdb
 P:\MicrosoftMvcExample\MvcMovie\obj\Debug\netcoreapp3.1\MvcMovie.csproj.CopyComplete
 p:\MicrosoftMvcExample\MvcMovie\obj\Debug\netcoreapp3.1\Razor\Views\HelloWorld\Index.cshtml.g.cs
+P:\MicrosoftMvcExample\MvcMovie\obj\Debug\netcoreapp3.1\Razor\Views\HelloWorld\Welcome.cshtml.g.cs
