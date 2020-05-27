@@ -114,7 +114,7 @@ By launching the app in non-debug mode changes can be made to the code and the c
 
 ### Change Views and Layout Pages
 
-- Replace the content of the `Views/SHared/_Layout.cshtml` file with the following:
+- Replace the content of the `Views/Shared/_Layout.cshtml` file with the following:
     ```html
     <!DOCTYPE html>
     <html lang="en">
